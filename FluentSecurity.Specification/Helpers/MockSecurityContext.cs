@@ -38,5 +38,11 @@ namespace FluentSecurity.Specification.Helpers
 		}
 
 		public ISecurityRuntime Runtime { get; private set; }
+
+        public System.Web.Mvc.AuthorizationContext AuthorizationContext
+        {
+            get;
+            set;
+        }
 	}
 }

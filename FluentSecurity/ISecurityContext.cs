@@ -10,5 +10,6 @@ namespace FluentSecurity
 		bool CurrentUserIsAuthenticated();
 		IEnumerable<object> CurrentUserRoles();
 		ISecurityRuntime Runtime { get; }
+        System.Web.Mvc.AuthorizationContext AuthorizationContext { get; set; }
 	}
 }

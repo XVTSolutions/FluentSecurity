@@ -147,6 +147,12 @@ namespace FluentSecurity.Specification.Policy
 			}
 
 			public ISecurityRuntime Runtime { get; set; }
+
+            public System.Web.Mvc.AuthorizationContext AuthorizationContext
+            {
+                get;
+                set;
+            }
 		}
 	}
 }

@@ -67,5 +67,11 @@ namespace FluentSecurity
 
 			return context;
 		}
+
+        public System.Web.Mvc.AuthorizationContext AuthorizationContext
+        {
+            get;
+            set;
+        }
 	}
 }

@@ -23,6 +23,7 @@ namespace FluentSecurity
 
 			var securityContext = SecurityContext.Current;
 			securityContext.Data.RouteValues = filterContext.RouteData.Values;
+            securityContext.AuthorizationContext = filterContext;
 
 			var overrideResult = Handler.HandleSecurityFor(controllerName, actionName, securityContext);
 			if (overrideResult != null) filterContext.Result = overrideResult;

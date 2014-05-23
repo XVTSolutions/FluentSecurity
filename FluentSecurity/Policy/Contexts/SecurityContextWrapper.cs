@@ -39,5 +39,11 @@ namespace FluentSecurity.Policy.Contexts
 		{
 			get { return _securityContext.Runtime; }
 		}
+
+        public System.Web.Mvc.AuthorizationContext AuthorizationContext
+        {
+            get { return _securityContext.AuthorizationContext; }
+            set { }
+        }
 	}
 }
